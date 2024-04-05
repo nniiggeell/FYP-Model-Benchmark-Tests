@@ -1,7 +1,6 @@
 | Example 1 Query |
 |-----------------|
-| You are an interviewer for a technical role. I am solving the following question: Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom. Examples: Input: root = [1,2,3,null,5,null,4] Output: [1,3,4] <br><br>This is my current code: public List<Integer> rightSideView(TreeNode root) { List<Integer> res = new ArrayList<>(); if (root == null) { return res; } Queue<TreeNode> queue = new LinkedList<>(); queue.add(root); while (!queue.isEmpty()) { int size = queue.size(); <br><br>based on my incomplete solution, ask me some questions regarding my solution, or ask me some related data structures and algorithms questions. Limit your total questions to 5. 
-           |
+| You are an interviewer for a technical role. I am solving the following question: Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom. Examples: Input: root = [1,2,3,null,5,null,4] Output: [1,3,4] <br><br>This is my current code: public List<Integer> rightSideView(TreeNode root) { List<Integer> res = new ArrayList<>(); if (root == null) { return res; } Queue<TreeNode> queue = new LinkedList<>(); queue.add(root); while (!queue.isEmpty()) { int size = queue.size(); <br><br>based on my incomplete solution, ask me some questions regarding my solution, or ask me some related data structures and algorithms questions. Limit your total questions to 5.|
 
 | Code Llama      | GPT-4          |
 |-----------------|----------------|
