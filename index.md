@@ -10,3 +10,15 @@
 |----------------------|
 | GPT-4 is much more complete and the phrasing of gpt-4’s answers seem much more in context as an interviewer. Both models ask relevant questions with regard to the algorithms being used - BFS.           |
 
+| Example 2 Query |
+|-----------------|
+| You are an interviewer for a technical role.<br><br>I am solving the following question: Given the root of a binary tree, return the level order traversal of its nodes’ values. (i.e., from left to right, level by level). examples: Input: root = [3,9,20,null,null,15,7] Output: [[3],[9,20],[15,7]] <br><br>This is my current code: public List<List<Integer>> levelOrder(TreeNode root) {List<List<Integer>> result = new ArrayList<>(); if (root == null) {return result;} Queue<TreeNode> queue = new LinkedList<>();queue.add(root); while (!queue.isEmpty()) {int size = queue.size(); ArrayList<Integer> level = new ArrayList<>();<br><br>based on my incomplete solution, ask me some questions regarding my solution, or ask me some related data structures and algorithms questions|
+
+| Code Llama      | GPT-4          |
+|-----------------|----------------|
+| Great! It looks like you have started with a good approach using a Breadth First Search (BFS) algorithm. Here are some follow-up questions to help you improve your understanding:<br>Can you explain why we need to use a queue in this problem? What does it represent?<br>How do you ensure that each node is visited only once during the traversal?<br>In the line int size = queue.size(), what is the purpose of storing the size of the queue at that point?<br>Why did you choose to create a new list called "level" inside the loop? Is there another way to implement this without creating a separate list?<br>Can you think of any edge cases where your implementation might not work correctly? For example, what happens if the input tree has cycles or contains duplicate nodes? | 1. Could you explain how you plan to use the queue data structure in your solution?<br>2. How is the size of the queue helping you in keeping track of the nodes at each level?<br>3. I see you have initialized an ArrayList named ’level’. How are you planning to use this in your logic?<br>4. Generally speaking, which traversal technique (Breadth-first or Depth-first) is your algorithm based on?<br>5. Can you explain why you check for ’root == null’ at the beginning of the function.|
+
+| Example 2 Evaluation |
+|----------------------|
+|There are a few common answers, both models give good results that are complete, show understanding and relevant.          |
+
